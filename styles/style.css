@@ -1,35 +1,77 @@
+/* Общие стили для блоков навигации и адреса в хедере и футере  */
+
+.main-and-address_styles {
+  text-decoration: none;
+  font-size: 18px;
+  width: 400;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+
+
 .header {
+  position: relative;
+  width: 1100px;
+  height: 293px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  justify-content: space-between;
-  justify-items: center;
   align-items: center;
-  gap: 20px;
-  padding: 50px 0px 50px 0px;
+  padding: 92px 50px 96px;
 
 }
 
 .header__menu {
-  display: flex;
+  display: inline;
+  justify-self: start;
 }
 
-.header__links-list{
+.header__links-list {
   display: inline-flex;
-  gap: 25px;
+  gap: 32px;
   list-style: circle;
+  padding-left: 6px;
 }
 
+.header__links-list-item__main {
+  list-style: none;
+}
 
-.header__logo-image {
+.header__logo {
+  justify-self: center;
+}
+
+.header__logo-image img {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 148px;
+  height: 105px;
 }
+
+.address { 
+  width: 240px;
+  height: 98px;
+  justify-self: end;
+}
+
+/* Стиль для подчеркивания номера телефона и мейла в адресе и в футере и в хедере. Также подчеркивание в навигационном меню в футере  */
+.header__links-list-item__about,
+.header__links-list-item__about-lots,
+.footer__menu-list-item__about,
+.footer__menu-list-item__about-lots,
+.mail_style,
+.tel_style {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+/* Стили блока с обложкой  */
 
 .cover {
   position: relative;
   width: 1100px;
   height: 757px;
+  padding: 165px 50px 50px;
+
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,8 +91,8 @@
 /* позиционируем блок с текстом "оно тебе надо" в родительском блоке и задаём переносы */
 .cover_title {
   position: absolute;
-  top: 165px;
-  left: 50px;
+  /* top: 165px; */
+  /* left: 50px; */
   display: grid;
   grid-template-columns: 1fr;
   width: 1000px;
@@ -89,6 +131,7 @@
 
 .aligned-text_right {
   text-align: end;
+  margin-right: -0.3em; /* убираем letter-spacing после последней буквы */
 }
 
 .cover__description{
@@ -122,6 +165,10 @@
   text-transform: uppercase;
 }
 
+
+/* Блок с карточками лотов  */
+
+
 .lots {
   position: relative;
   width: 1052px;
@@ -129,11 +176,29 @@
   margin: 180px 24px 120px;
 }
 
+.lots__heading_slyle {
+  position: absolute;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+  left: 40px;
+}
+
 .lots__card-list ul {
-  position: relative;
+  position: absolute;
   display: flex;
   gap: 25px;
   list-style: none;
+  top: 74px;
+}
+
+/* Задаём размер карточек лотов */
+.lots__card-list ul li {
+  min-width: 334px;
+  min-height: 596px;
 }
 
 .lot_backgroud {
@@ -144,15 +209,35 @@
 
 /* стили для заголовка карточек */
 .lots_title {
-  position: absolute;
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-style: bold;
   font-size: 22px;
+  line-height: 120%;
   text-transform: uppercase;
   text-decoration: underline;
+}
+/* Стили описания карточек  */
+.lots_discription {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  align-self: end;
+}
+
+/* Позиционируем текст в карточках лотов */
+.lot_card_position {
+  position: absolute;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100%;
+  padding: 48px 40px;
   z-index: 2;
 }
+
 
 .lot_first {
   background-image: url(../images/card-lot-01.jpg);
@@ -166,3 +251,129 @@
 .lot_third {
   background-image: url(../images/card-lot-03.jpg);
 }
+
+.lots__look-more-link {
+  display: inline;
+  position: absolute;
+  top: 700px;
+  left: 40px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  font-size: 20px;
+}
+
+/* Блок с описанием об аукционе  */
+
+
+.about {
+  position: relative;
+  width: 1052px;
+  height: 595px;
+  margin: 120px 24px 180px;
+  padding-top: 35px;
+
+  
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+
+  column-gap: 25px;
+}
+
+.about__logo {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.about__logo-img {
+  display: block;
+  width: 148px;
+  height: 114px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Заголовок - вторая колонка, первая строка */
+.about__title {
+  grid-column: 2; /* Вторая колонка */
+  grid-row: 1; /* Первая строка */
+  /* Выравниваем по вертикали с центром круга */
+  display: flex;
+  align-items: center; /* Это центрирует заголовок по вертикали */
+  height: 240px; /* Такая же высота, как у круга */
+  margin: 0;
+  padding: 0;
+}
+
+.about_lile_font-styles {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  text-transform:uppercase;
+}
+
+/* Текст - вторая колонка, вторая строка */
+.about_discription {
+  grid-column: 2; /* Вторая колонка */
+  grid-row: 2; /* Вторая строка */
+  margin-top: 0; /* Отступ уже задан через row-gap у .about */
+}
+
+.about_discription p {
+  margin: 0 0 24px 0; /* Отступы между параграфами */
+  line-height: 24px;
+}
+
+.about_discription_font-styles {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0%;
+  /* line-height: 24px; */
+}
+
+
+/* Блок с подвалом  */
+
+.footer {
+  display: grid;
+  position: relative;
+  width: 1100px;
+  height: 180px;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  align-items: start;
+  padding: 0px 50px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_logo_youtube,
+.img_logo_vk,
+.img_logo_pinterest {
+  width: 48px;
+  height: 48px;
+}
+
