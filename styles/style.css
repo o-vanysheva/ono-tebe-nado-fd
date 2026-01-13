@@ -1,4 +1,4 @@
-/* Общие стили для блоков навигации и адреса в хедере и футере  */
+/* Общие стили для навигации/адреса в хедере и футере  */
 
 .main-and-address_styles {
   text-decoration: none;
@@ -8,7 +8,7 @@
   line-height: 24.3px;
 }
 
-
+/* Стили хедера страницы */
 
 .header {
   position: relative;
@@ -53,7 +53,7 @@
   justify-self: end;
 }
 
-/* Стиль для подчеркивания номера телефона и мейла в адресе и в футере и в хедере. Также подчеркивание в навигационном меню в футере  */
+/* Подчеркивания номера телефона/мейла в адресе в футере/хедере. + подчеркивание в навигационном меню в футере  */
 .header__links-list-item__about,
 .header__links-list-item__about-lots,
 .footer__menu-list-item__about,
@@ -88,13 +88,12 @@
   z-index: 1;
 }
 
-/* позиционируем блок с текстом "оно тебе надо" в родительском блоке и задаём переносы */
+/* Позиционируем блок с текстом "оно тебе надо" в родительском блоке и задаём переносы */
 .cover_title {
-  position: absolute;
-  /* top: 165px; */
-  /* left: 50px; */
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 20px;
   width: 1000px;
   height: 385px;
 }
@@ -111,7 +110,6 @@
   font-style: bold;
   font-size: 100px;
   line-height: 114.99999999999999%;
-  height: 115px;
   text-transform:uppercase;
   letter-spacing: 0.3em;
 }
@@ -127,6 +125,7 @@
 
 .aligned-text_center {
   text-align: center;
+  margin-right: -0.3em; /* убираем letter-spacing после последней буквы */
 }
 
 .aligned-text_right {
@@ -136,8 +135,8 @@
 
 .cover__description{
   position: absolute;
-  top: 656px;
-  left: 50px;
+  display: inline;
+  margin-top: 105px;
 }
 
 .cover__description-text {
@@ -207,7 +206,7 @@
   background-position: center;
 }
 
-/* стили для заголовка карточек */
+/* Стили заголовка карточек */
 .lots_title {
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
@@ -225,6 +224,7 @@
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0%;
+
   align-self: end;
 }
 
@@ -277,6 +277,7 @@
   grid-template-columns: 334px 1fr;
   grid-template-rows: auto 1fr;
   align-items: start;
+  row-gap: 7px;
 
   column-gap: 25px;
 }
@@ -307,12 +308,12 @@
 
 /* Заголовок - вторая колонка, первая строка */
 .about__title {
-  grid-column: 2; /* Вторая колонка */
-  grid-row: 1; /* Первая строка */
-  /* Выравниваем по вертикали с центром круга */
+  grid-column: 2;
+  grid-row: 1;
+  
   display: flex;
-  align-items: center; /* Это центрирует заголовок по вертикали */
-  height: 240px; /* Такая же высота, как у круга */
+  align-items: center; 
+  height: 240px;
   margin: 0;
   padding: 0;
 }
@@ -324,11 +325,10 @@
   text-transform:uppercase;
 }
 
-/* Текст - вторая колонка, вторая строка */
+
 .about_discription {
-  grid-column: 2; /* Вторая колонка */
-  grid-row: 2; /* Вторая строка */
-  margin-top: 0; /* Отступ уже задан через row-gap у .about */
+  grid-column: 2; 
+  grid-row: 2; 
 }
 
 .about_discription p {
@@ -341,7 +341,6 @@
   font-style: normal;
   font-size: 20px;
   letter-spacing: 0%;
-  /* line-height: 24px; */
 }
 
 
@@ -368,6 +367,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer_nav a {
+  line-height: normal;
 }
 
 .img_logo_youtube,
