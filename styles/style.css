@@ -132,9 +132,12 @@
 }
 
 .cover__description {
-  position: absolute;
-  display: inline;
+  position: relative; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
   margin-top: 105px;
+  width: 100%;
 }
 
 .cover__description-text {
@@ -143,9 +146,7 @@
   font-style: normal;
   font-size: 22px;
   line-height: 28px;
-
   word-spacing: 0.9em;
-  margin-right: 107px;
 }
 
 .bet-button {
@@ -160,6 +161,7 @@
   color: rgba(255, 255, 255, 1);
   background: transparent;
   text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 /* Блок с карточками лотов  */
@@ -171,7 +173,7 @@
   margin: 180px 24px 120px;
 }
 
-.lots__heading_slyle {
+.lots__heading_style {
   position: absolute;
   color: rgba(0, 0, 0, 1);
   font-weight: 700;
@@ -196,7 +198,7 @@
   min-height: 596px;
 }
 
-.lot_backgroud {
+.lot_background {
   position: relative;
   background-size: cover;
   background-position: center;
