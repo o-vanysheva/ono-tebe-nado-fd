@@ -294,8 +294,8 @@
 
 .about__logo-img {
   display: block;
-  width: 148px;
   height: 114px;
+  width: 148px;
   position: absolute;
   z-index: 1;
 }
