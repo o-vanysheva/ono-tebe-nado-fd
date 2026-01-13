@@ -110,11 +110,8 @@
   line-height: 114.99999999999999%;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-}
 
-/* выравниваем текст согласно макету */
-.aligned-text {
-  display: block;
+  display: block; /* выравниваем текст согласно макету */
 }
 
 .aligned-text_left {
