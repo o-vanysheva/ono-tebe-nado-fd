@@ -53,11 +53,7 @@
 }
 
 /* Подчеркивания номера телефона/мейла в адресе в футере/хедере. + подчеркивание в навигационном меню в футере  */
-.header__links-list-item__about,
-.header__links-list-item__about-lots,
-.footer__menu-list-item__about,
-.footer__menu-list-item__about-lots,
-.contact__link {
+.border-bottom {
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
