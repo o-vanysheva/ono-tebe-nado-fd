@@ -211,7 +211,7 @@
   text-decoration: underline;
 }
 /* Стили описания карточек  */
-.lots_discription {
+.lots_description {
   color: rgba(255, 255, 255, 1);
   font-weight: 100;
   font-style: normal;
@@ -306,9 +306,7 @@
   height: 240px;
   margin: 0;
   padding: 0;
-}
 
-.about_lile_font {
   font-weight: 700;
   font-style: bold;
   font-size: 40px;
