@@ -1,6 +1,6 @@
 /* Общие стили для навигации/адреса в хедере и футере  */
 
-.main-and-address_styles {
+.main-and-address {
   text-decoration: none;
   font-size: 18px;
   width: 400;
@@ -169,7 +169,7 @@
   margin: 180px 24px 120px;
 }
 
-.lots__heading_style {
+.lots__heading {
   position: absolute;
   color: rgba(0, 0, 0, 1);
   font-weight: 700;
@@ -308,7 +308,7 @@
   padding: 0;
 }
 
-.about_lile_font-styles {
+.about_lile_font {
   font-weight: 700;
   font-style: bold;
   font-size: 40px;
@@ -325,7 +325,7 @@
   line-height: 24px;
 }
 
-.about_discription_font-styles {
+.about_discription_font {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
