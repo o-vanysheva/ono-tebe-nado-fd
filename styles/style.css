@@ -166,14 +166,14 @@
 }
 
 .lots__heading {
-  position: absolute;
   color: rgba(0, 0, 0, 1);
   font-weight: 700;
   font-style: bold;
   font-size: 40px;
   line-height: 100%;
   text-transform: uppercase;
-  left: 40px;
+  padding-left: 40px;
+  padding-top: 5px;
 }
 
 .lots__card-list ul {
