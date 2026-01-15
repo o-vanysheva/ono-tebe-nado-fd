@@ -13,7 +13,7 @@
 .header {
   position: relative;
   width: 1100px;
-  height: 293px;
+  /* height: 293px; */
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -63,7 +63,7 @@
 .cover {
   position: relative;
   width: 1100px;
-  height: 757px;
+  /* height: 757px; */
   padding: 165px 50px 50px;
 
   background-image: url(../images/cover.jpg);
@@ -90,10 +90,7 @@
   row-gap: 20px;
   width: 1000px;
   height: 385px;
-}
 
-.cover_title,
-.cover__description {
   z-index: 2;
   color: rgba(255, 255, 255, 1);
 }
@@ -130,10 +127,13 @@
   align-items: center; 
   margin-top: 105px;
   width: 100%;
+
+  z-index: 2;
+  color: rgba(255, 255, 255, 1);
 }
 
 .cover__description-text {
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
   font-style: normal;
   font-size: 22px;
