@@ -226,15 +226,15 @@
   z-index: 2;
 }
 
-.lot_first {
+.lot_card_film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.lot_second {
+.lot_card_book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.lot_third {
+.lot_card_picture {
   background-image: url(../images/card-lot-03.jpg);
 }
 
