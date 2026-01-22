@@ -51,10 +51,8 @@
   justify-self: end;
 }
 
-/* Подчеркивания номера телефона/мейла в адресе в футере/хедере. + подчеркивание в навигационном меню в футере  */
-.border-bottom {
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+.header__link_active {
+  border-bottom: none; /* ссылка без подчеркивания */
 }
 
 /* Стили блока с обложкой  */
