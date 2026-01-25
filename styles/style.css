@@ -151,7 +151,6 @@
 /* Блок с карточками лотов  */
 
 .lots {
-  position: relative;
   width: 1052px;
   margin: 180px 24px 120px;
 }
@@ -198,7 +197,7 @@
 }
 
 /* Стили заголовка карточек */
-.lots_title {
+.card__title {
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-size: 22px;
@@ -209,7 +208,7 @@
 }
 
 /* Стили описания карточек  */
-.lots_description {
+.card__description {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-style: normal;
@@ -230,7 +229,7 @@
 }
 
 /* Фоны карточек */
-.lot_card_film {
+.lots__card_film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
@@ -252,7 +251,6 @@
 /* Блок с описанием об аукционе  */
 
 .about {
-  position: relative;
   width: 1052px;
   margin: 120px 24px 180px;
   padding-top: 35px;
@@ -305,12 +303,12 @@
   text-transform: uppercase;
 }
 
-.about_discription {
+.about__description {
   grid-column: 2;
   grid-row: 2;
 }
 
-.about_discription p:first-child {
+.about__description p:first-child {
   margin-bottom: 24px; /* Отсутп между параграфами */
 }
 
