@@ -1,7 +1,6 @@
 /* Общие стили для навигации/адреса в хедере и футере  */
 
-.main-and-address {
-  text-decoration: none;
+.header-footer-text {
   font-size: 18px;
   width: 400;
   font-style: normal;
@@ -28,7 +27,6 @@
   display: inline-flex;
   gap: 32px;
   list-style: circle;
-  padding-left: 6px;
 }
 
 .header__links-list-item__main {
@@ -47,12 +45,13 @@
 
 .address {
   width: 240px;
-  height: 98px;
   justify-self: end;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__link_active {
-  border-bottom: none; /* ссылка без подчеркивания */
+  text-decoration: none; /* ссылка без подчеркивания */
 }
 
 /* Стили блока с обложкой  */
