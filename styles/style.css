@@ -1,6 +1,6 @@
 /* Общие стили для навигации/адреса в хедере и футере  */
 
-.header-footer-text {
+.basic-text {
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -50,7 +50,7 @@
   flex-direction: column;
 }
 
-.header__link_active {
+.link_not_active {
   text-decoration: none; /* ссылка без подчеркивания */
 }
 
