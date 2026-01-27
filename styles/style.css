@@ -50,7 +50,7 @@
   flex-direction: column;
 }
 
-.link_not_active {
+.link_active {
   text-decoration: none; /* ссылка без подчеркивания */
 }
 
@@ -352,4 +352,8 @@
 .footer__social-icon {
   width: 48px;
   height: 48px;
+}
+
+.social-link {
+  text-decoration: none; 
 }
